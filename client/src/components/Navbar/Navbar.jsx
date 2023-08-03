@@ -27,6 +27,7 @@ const Navbar = () => {
             {style &&
                 <div className="others-display-list">
                     <ul>
+                        
                         <li><button onClick={() => setStyle(!style)}><Link to="/">HOME</Link></button></li>
                         <li><button onClick={() => setStyle(!style)}><Link to="/theory">THEORY</Link></button></li>
                         <li><button onClick={() => setStyle(!style)}><Link to="/sim">SIMULATOR</Link></button></li>

@@ -5,6 +5,7 @@ const BookingForm = () => {
   return (
     <div>
       BookingForm
+      
     </div>
   )
 }
