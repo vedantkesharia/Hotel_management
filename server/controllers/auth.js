@@ -3,9 +3,6 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 
-
-
-
 export const register = async(req,res) =>{
     const { email, password } = req.body;
     const salt = await bcrypt.genSalt();
