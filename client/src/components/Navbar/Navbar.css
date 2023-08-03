@@ -28,7 +28,7 @@
   letter-spacing: 0.25rem;
   word-spacing: 0.3rem;
   font-family: "Roboto Slab", serif;
-  font-weight: 600whawa;
+  font-weight: 600;
 }
 .nav .others {
   width: 67%;
@@ -171,5 +171,4 @@
   .nav .others-display-list ul li button {
     font-size: 0.9rem;
   }
-}
-/*# sourceMappingURL=Navbar.css.map */
+}/*# sourceMappingURL=Navbar.css.map */
