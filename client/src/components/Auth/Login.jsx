@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Container, Grid, TextField, Button, Typography } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
+import toast,{Toaster} from 'react-hot-toast'; 
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  // const toast = useHotToast(); 
 
   const handleLogin = async () => {
     try {
@@ -24,7 +26,9 @@ function Login() {
       navigate('/');
     } catch (error) {
       console.error('Login error:', error);
-      toast.error('Invalid credentials. Please try again.');
+      // toast.error('Invalid credentials. Please try again.');
+      toast.error('Invalid credentials. Please try again.'); 
+      
     }
   };
 
@@ -77,6 +81,7 @@ function Login() {
                 >
                   Sign in
                 </Button>
+                <Toaster />
               </div>
 
               <br />
